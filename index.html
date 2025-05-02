@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Vídeo HTML5</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0c29;
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        video {
+            border: 5px solid white;
+            border-radius: 12px;
+            max-width: 90vw;
+            max-height: 80vh;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reproductor de vídeo HTML5</h1>
+    <video controls poster="poster.jpg">
+        <source src="video_mp4.mp4" type="video/mp4">
+        <source src="video_webm.webm" type="video/webm">
+        Tu navegador no soporta el elemento de vídeo HTML5.
+    </video>
+</body>
+
+</html>
